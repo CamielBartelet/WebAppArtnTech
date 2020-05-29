@@ -1,9 +1,8 @@
 body {
     height: 55rem;
     width: 100%;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     font-family: sans-serif;
     margin: 0;
     background-color: grey;
@@ -13,12 +12,20 @@ section {
     position: relative;
 }
 
+#movingCube{
+    width: 200px;
+    height: 200px;
+    background: blue;
+  }
+
 main {
     z-index: 99;
     display: flex;
     justify-content: center;
+    align-items: center;
     align-content: space-between;
-    width: 50rem;
+    /* width: 50rem; */
+    margin: 0;
     /* border: 2px dotted blue; */
 }
 
