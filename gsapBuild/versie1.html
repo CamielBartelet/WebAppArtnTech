@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versie 1 - GSAPing</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
+    <body>
+        
+        <main>
+            <div class="box" id="box1">
+                <img class="img" src="../files/img/life_agency_job_done.png" alt="your job is done">
+            </div>
+            <div class="box" id="box2">
+                <img class="img" src="../files/img/life_agency_job_done_2.png" alt="your job is done">
+            </div>
+            <div class="box" id="box3">
+                <img class="img" src="../files/img/life_agency_job_done-04.png" alt="your job is done">
+            </div>
+
+            <!-- <section>
+                <div class="box" id="box0">
+                    <img src="frame.jpg" alt="frame">
+                </div>
+            </section> -->
+        </main>
+
+        <script>
+            const tl = gsap.timeline()
+            
+            tl.from('.img', {
+                duration: 4,
+                opacity: 0,
+                ease: 'power2',
+                scale: 0,
+            })
+
+        </script>
+
+
+    </body>
+</html>
