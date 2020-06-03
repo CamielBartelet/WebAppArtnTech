@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.posterRsz {
+.posterRsz, .posterRszmore {
     padding: 20px 20px;
     display: flex;
     justify-content: center;
@@ -11,6 +11,11 @@ body {
 .posterRsz img {
     width: 300px;
     height: 425px;
+}
+
+.posterRszmore img {
+    height: 425px;
+    width: auto;
 }
 
 .menubar {
