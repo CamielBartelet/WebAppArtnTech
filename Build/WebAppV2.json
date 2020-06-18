@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "3D environment with lighting",
+"productVersion": "0.1",
+"dataUrl": "WebAppV2.data.unityweb",
+"wasmCodeUrl": "WebAppV2.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebAppV2.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.3f1"
+}
