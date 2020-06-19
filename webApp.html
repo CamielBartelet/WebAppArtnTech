@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | 3D environment with lighting</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebAppV2.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="menubar">
-      <div class="tonext">
-        <a href="timelineTwo.html">Where's your job?</a>
-      </div>
-    </div>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">3D environment with lighting</div>
-      </div>
-    </div>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Unity WebGL Player | 3D environment with lighting</title>
+        <link rel="shortcut icon" href="TemplateData/favicon.ico">
+        <link rel="stylesheet" href="TemplateData/style.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <script src="TemplateData/UnityProgress.js"></script>
+        <script src="Build/UnityLoader.js"></script>
+        <script>
+            var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebAppV2.json", {onProgress: UnityProgress});
+        </script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function () {
+                $(".centerStart").click(function () {
+                    $(".centerStart").hide(1000);
+                    $(".webgl-content").delay(1000).show();
+
+                });
+            });
+        </script>
+        <div class="container">
+          <div class="menubar">
+              <div class="tonext">
+                  <a href="timelineTwo.html">Where's your job?</a>
+              </div>
+          </div>
+          <div class="instrtitle">
+            <h2>Instructions:</h2>
+          </div>
+          <div class="instrCont">
+            
+              <div class="keyInst">
+                <h3>Keys:</h3>
+                <div class="keyCode">
+                  <p>W</p>
+                </div>
+                <div class="keyCode">
+                  <p>A</p>
+                </div>
+                <div class="keyCode">
+                  <p>S</p>
+                </div>
+                <div class="keyCode">
+                  <p>D</p>
+                </div>
+              </div>
+              
+              <div class="mouseInst">
+                <h3>Mouse:</h3>
+                <div class="mouseObj">
+
+                </div>
+              </div>
+          </div>
+          <div class="centerStart">
+              <p>Click here</p>
+          </div>
+          <div class="webgl-content">
+              <div id="unityContainer" style="width: 960px; height: 600px"></div>
+              <div class="footer">
+                  <div class="webgl-logo"></div>
+                  <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                  <div class="title">3D environment with lighting</div>
+              </div>
+          </div>
+        </div>
+    </body>
 </html>
