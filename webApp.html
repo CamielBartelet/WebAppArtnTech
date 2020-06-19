@@ -18,8 +18,15 @@
         <script>
             $(document).ready(function () {
                 $(".centerStart").click(function () {
-                    $(".centerStart").hide(1000);
-                    $(".webgl-content").delay(1000).show();
+                    $(".centerStart p").hide(250);
+                    $(".instrtitle h2").hide(250);
+                    $(".centerStart").delay(50).hide(250);
+                    $(".instrCont").css({"width": "100%"});
+                    $(".keyInst, .mouseInst").css({"margin":""});
+                    $(".keyInst, .mouseInst").css({"position":"absolute"});
+                    $(".keyInst").animate({"left":"4%", "top":"200px"});
+                    $(".mouseInst").animate({"right":"4%", "top":"200px"});
+                    $(".webgl-content").delay(500).show(1000);
 
                 });
             });

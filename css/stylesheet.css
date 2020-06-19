@@ -65,6 +65,7 @@ body {
 }
 
 .keyInst, .mouseInst {
+    width: 300px;
     margin: 0 20px;
 }
 
