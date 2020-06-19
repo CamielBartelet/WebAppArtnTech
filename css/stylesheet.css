@@ -1,5 +1,42 @@
 body {
     margin: 0;
+    font-family: Helvetica;
+}
+
+.container {
+width: 100vw;
+height: 100vh;
+position: relative;
+}
+
+.titleApp {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.centerStart {
+    /* background-color: #f12c2c; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid #000;
+    content:"";
+}
+
+.centerStart p {
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.centerStart:hover {
+    background-color: #ffb6b6;
 }
 
 .posterRsz, .posterRszmore {

@@ -1,0 +1,31 @@
+@startuml "bigbankplc"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Container.puml
+
+skinparam wrapWidth 300
+skinparam maxMessageSize 200
+
+Person(visitor, Visitor, "Visitor Website")
+
+System_Boundary(c1, "Central Webapp") {
+Container(appStart, "Startscreen", "Allows visitor to start the journey")
+Container(timelineone, "Timeline part 1", "First part timeline old to present day storyline")
+System_Boundary(c2, "WebGLapp Unity"){
+    Container(webGLpage, "User Interface", "User Interface with instructions for using the WebGL app")
+    Container(webGL, "The Unity app", "3D environment with possible user interaction")
+}
+Container(timelinetwo, "Timeline part 2", "Second part timeline present day to future storyline")
+Container(ending, "Ending", "Final message")
+}
+
+Rel(visitor, appStart, "Uses", "HTTP website")
+Rel_R(appStart, timelineone, "Uses", "Click")
+Rel_R(timelineone, webGLpage, "Uses","Click" )
+Rel(webGLpage, webGL, "Uses", "Click")
+Rel_L(webGL, timelinetwo, "Uses", "Dynamic event")
+Rel_L(timelinetwo, ending, "Uses", "Click")
+Rel_U(ending,appStart, "Uses", "Click")
+
+
+@enduml
