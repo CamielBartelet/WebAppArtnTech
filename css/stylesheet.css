@@ -145,7 +145,8 @@ body {
 .sect {
     height: 100vh;
     display: flex;
-    align-items: center;   
+    align-items: center;
+    scroll-snap-stop: always;   
 }
 
 .webgl-content {
