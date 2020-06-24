@@ -41,6 +41,13 @@ body {
     background-color: #ffb6b6;
 }
 
+/* .containerLine {
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+} */
+
 .containerLine:after {
     content:"";
     position: fixed;
@@ -83,11 +90,11 @@ body {
 }
 
 #left{
-    left: 0;
+    left: 2.5%;
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 45%;
 }
 
 .menubar {
@@ -136,17 +143,16 @@ body {
 }
 
 #right{
-    right: 0;
+    right: 2.5%;
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 45%;
 }
 .sect {
     height: 100vh;
     display: flex;
     align-items: center;
-    scroll-snap-stop: always;   
 }
 
 .webgl-content {
