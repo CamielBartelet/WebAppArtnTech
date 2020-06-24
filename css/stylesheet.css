@@ -117,3 +117,190 @@ body {
 .webgl-content {
     display: none;
 }
+
+/* GSAP PART LEX */
+
+main {
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: grey;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#section1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 22rem;
+    height: auto 0;
+    /* border: 2px dotted blue; */
+}
+
+/* BOXHOLDERS VOOR VERSCHILLENDE VERSIE */
+.boxholder {
+    position: absolute;
+    width: 20rem;
+    z-index: 1;
+}
+
+.boxholder2 {
+    position: absolute;
+    width: 20rem;
+    z-index: -1;
+}
+
+.boxholder3 {
+    position: absolute;
+    width: 20rem;
+    z-index: -2;
+}
+
+/* LOSSE POSTERONDERDELEN */
+/* POSTER 1 */
+
+#img1 { /* BACKGROUND */
+    width: 20rem;
+    height: auto;
+    position: absolute;
+}
+
+#img2 { /* HUMANS */
+    width: 16rem;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+#img3 { /* NOT */
+    width: 8rem;
+    height: auto;
+    position: absolute;
+    top: 7rem;
+    left: 6rem;
+}
+
+#img4 { /* NEEDED */
+    width: 16rem;
+    height: auto;
+    position: absolute;
+    top: 12rem;
+    left: 2rem;
+}
+
+#img5 { /* LOGO TLA */
+    width: 12rem;
+    height: auto;
+    position: absolute;
+    top: 19rem;
+    left: 4.25rem;
+}
+
+/* POSTER2 */
+
+#img6 { /* BACKGROUND */
+    width: 20rem;
+    height: auto;
+    position: absolute;
+}
+
+#img7 { /* YOUR */
+    width: 11rem;
+    height: auto;
+    position: absolute;
+    top: 0.5rem;
+    left: 5rem;
+}
+
+#img8 { /* JOB */
+    width: 10rem;
+    height: auto;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+#img9 { /* IS */
+    width: 4rem;
+    height: auto;
+    position: absolute;
+    top: 11.5rem;
+    left: 8.5rem;
+}
+
+#img10 { /* DONE */
+    width: 12rem;
+    height: auto;
+    position: absolute;
+    top: 16.5rem;
+    left: 4.25rem;
+}
+
+#img11 { /* LOG TLA */
+    width: 6rem;
+    height: auto;
+    position: absolute;
+    top: 23rem;
+    left: 7.5rem;
+}
+
+/* POSTER3 */
+
+#img12 { /* BACKGROUND */
+    width: 20rem;
+    height: auto;
+    position: absolute;
+}
+
+#img13 { /* LOGO TLA */
+    width: 5rem;
+    height: auto;
+    position: absolute;
+    top: 0.5rem;
+    left: 8rem;
+}
+
+#img14 { /* YOUR LIFE BEGINS */
+    width: 16rem;
+    height: auto;
+    position: absolute;
+    top: 3.5rem;
+    left: 2rem;
+}
+
+#img15 { /* NOW */
+    width: 6.5rem;
+    height: auto;
+    position: absolute;
+    top: 5.6rem;
+    left: 7.2rem;
+}
+
+#img16 { /* POINTS */
+    width: 20.3rem;
+    height: auto;
+    position: absolute;
+    top: 9.3rem;
+    left: -0.1rem;
+}
+
+#img17 { /* ARROWS */
+    width: 16rem;
+    height: auto;
+    position: absolute;
+    top: 13.33rem;
+    left: 2.22rem;
+}
+
+#img18 { /* BRAIN AI */
+    width: 5.5rem;
+    height: auto;
+    position: absolute;
+    top: 22.5rem;
+    left: 7.3rem;
+}
