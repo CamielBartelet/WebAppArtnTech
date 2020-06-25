@@ -69,6 +69,10 @@ body::after {
     justify-content: center;
 }
 
+.goDown {
+    margin-top: 380px;
+}
+
 .containerLine:after {
     content:"";
     position: fixed;
@@ -110,6 +114,21 @@ body::after {
     margin: 0 20px;
 }
 
+.landit {
+    height: 85vh;
+}
+
+/* .landit::after {
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    bottom: 5%;
+    left: 50%;
+    border-left: 2px dotted #000000;
+    transform: translate(-50%);
+} */
+
 #left{
     left: 2.5%;
     position: absolute;
@@ -127,6 +146,20 @@ body::after {
     border: 0;
     text-align: center;
     padding: 20px 20px;
+    z-index: -2;
+}
+
+.menubar2 {
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 25%, rgba(255,0,0,1) 100%);
+    font-family: Helvetica;
+    font-size: 25px;
+    margin: 0;
+    display: block;
+    border: 0;
+    text-align: center;
+    padding: 20px 20px;
+    z-index: -2;
 }
 
 .menubar a {
@@ -174,6 +207,10 @@ body::after {
     height: 100vh;
     display: flex;
     align-items: center;
+}
+
+.tonext {
+    color: white;
 }
 
 .webgl-content {
