@@ -1,8 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+@font-face {
+    font-family: 'Baloo Bhai 2', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksanddash';
+    src: url('../fonts/quicksand_dash-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand_dash-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('../fonts/quicksand-bold-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quicksandbold_italic';
+    src: url('../fonts/quicksand-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quicksanditalic';
+    src: url('../fonts/quicksand-italic-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('../fonts/quicksand-light-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quicksandlight_italic';
+    src: url('../fonts/quicksand-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     margin: 0;
-    font-family: Helvetica;
+    font-family: 'quicksandregular';
     overflow-x: hidden;
 
+}
+
+h1 {
+    font-family: 'quicksandlight';
+    text-shadow: 2px 2px 2px rgb(43, 43, 43);
 }
 
 body::after {
@@ -49,6 +142,9 @@ body::after {
     cursor: pointer;
     border-radius: 25px;
     border: 1px solid #000;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
     content:"";
 }
 
