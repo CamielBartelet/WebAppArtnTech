@@ -20,6 +20,11 @@ body::after {
     z-index: -1;   
   }
 
+  #centerVid {
+    display: block;
+    margin: 0 auto;
+  }
+
 .container {
     width: 100vw;
     height: 100vh;
