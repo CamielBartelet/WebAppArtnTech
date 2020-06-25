@@ -43,7 +43,7 @@ box2.from("#img6", { duration: 1, y: -250, ease: "back", scale: 0 }, "+=4")
 
 // VOLGENDE
 
-box3.from("#img12", {duration: 1, ease: "back.inOut(2)", opacity: 0, scale: 0.5}, "+=7")
+box3.from("#img12", {duration: 1, ease: "back.inOut(2)", opacity: 0, scale: 0.5}, "+=8")
     .from("#img14", {duration: 1, ease: "power2.easeOut(2)", opacity:0, scale: 0})
     .from("#img15", {duration: 1, ease: "back.out(12)", opacity: 0, scale: 0})
     .from("#img16", {duration: 1, y: 700, ease: "power1.out(2)", opacity: 0, scale: 1})
