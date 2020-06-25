@@ -11,7 +11,7 @@ body::after {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 75vw 50vh;
-    opacity: 0.5;
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -151,7 +151,7 @@ body::after {
 
 .menubar2 {
     background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,0) 25%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 25%, rgba(255,0,0,1) 100%);
     font-family: Helvetica;
     font-size: 25px;
     margin: 0;
@@ -160,6 +160,10 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 25%, rgba(255,0,0,1) 100%)
     text-align: center;
     padding: 20px 20px;
     z-index: -2;
+}
+
+.menubar2 h1 {
+    margin-top: 70px;
 }
 
 .menubar a {
