@@ -310,6 +310,7 @@ body::after {
     width: 45%;
 }
 .sect {
+    scroll-snap-align: start;
     height: 100vh;
     display: flex;
     align-items: center;
