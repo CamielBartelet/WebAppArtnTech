@@ -1,0 +1,34 @@
+@startuml "bigbankplc"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Container.puml
+
+skinparam wrapWidth 300
+skinparam maxMessageSize 200
+
+System(page, Page Application, "Single Page App Unity")
+
+System_Boundary(c1, "Interactive App") {
+Container(appStart, "Call to Action", "Shift UI to sides and call app")
+
+
+System_Boundary(c2, "WebGLapp Unity"){
+    Container(webGLpage, "3D Model", "3D environment with possible user interaction")
+    Container(webCall, "Web content", "Provides media content for use in App")
+    Container(webLink, "Web Link", "Link to next fase webapp")
+    Container(input, "User input", "Controls for moving camera 3D model")
+    Container(interaction, "Interaction", "User interaction with elements in 3D space")
+}
+
+}
+
+
+Rel(page, appStart, "Api call", "HTTP website")
+Rel_R(appStart, webGLpage, "Call App", "Click")
+Rel(webGLpage, webCall, "Uses", "WWW-function")
+Rel(webGLpage, webLink, "Uses", "OpenURL")
+Rel(webGLpage, input, "Uses", "Controlsscript")
+Rel_R(webGLpage, interaction, "Uses", "Interaction scripts")
+
+
+@enduml
